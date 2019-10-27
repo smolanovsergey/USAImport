@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Карточка авто</title>
+
+
+    <script language="javascript" type="text/javascript" src="../js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/jquery.easing.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+            var buttons = { previous:$('#lofslidecontent45 .lof-previous') ,
+                next:$('#lofslidecontent45 .lof-next') };
+
+            $obj = $('#lofslidecontent45').lofJSidernews( { interval : 4000,
+                direction		: 'opacitys',
+                easing			: 'easeInOutExpo',
+                duration		: 1200,
+                auto		 	: false,
+                maxItemDisplay  : 5,
+                navPosition     : 'horizontal', // horizontal
+                navigatorHeight : 96,
+                navigatorWidth  : 116,
+                mainWidth:620,
+                buttons			: buttons} );
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/cars/cars.css" />
+</head>
+<body>
+    <span class="vikup-rubrik">выкупленые авто</span>
+    <span class="vikup-rubrik-polosa"><hr></span>
+    <div class="cart-avto">
+        <div class="cart-avto-carusel">
+            <div id="lofslidecontent45" class="lof-slidecontent" style="width:620px; height:600px;">
+                <div class="preload"><div></div></div>
+                <!-- MAIN CONTENT -->
+                <div class="lof-main-outer" style="width:620px; height:600px;">
+                    <ul class="lof-main-wapper">
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_1.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_2.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_3.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_4.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_5.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_6.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_7.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_8.jpg" title="" >
+                        </li>
+                        <li>
+                            <img src="../images/cars/Photo_Mazda_6/car_9.jpg" title="" >
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MAIN CONTENT -->
+                <!-- NAVIGATOR -->
+                <div class="lof-navigator-wapper">
+                    <div onclick="return false" href="" class="lof-next"></div>
+                    <div class="lof-navigator-outer">
+                        <ul class="lof-navigator">
+                            <li><img src="../images/cars/Photo_Mazda_6/car_1.jpg"></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_2.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_3.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_4.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_5.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_6.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_7.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_8.jpg" /></li>
+                            <li><img src="../images/cars/Photo_Mazda_6/car_9.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div onclick="return false" href="" class="lof-previous"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-avto-opisanie-avto">
+            <span class="brand">Honda</span>
+            <span class="model">ACCORD 4C LX 2014</span>
+            <span class="else">Цена:<span class="white-big">$ 8000</span></span>
+            <span class="else">Объем двигателя:<span class="white-big">1.6</span></span>
+            <span class="else">Пробег:<span class="white-big">40 000 км</span></span>
+            <span class="else">Тип топлива:<span class="white-big">бензин</span></span>
+            <span class="else">Примерная стоимость растоможки:<span class="white-big">$ 1500</span></span>
+            <span class="else">Брокирские и экспедиторские услуги:<span class="white-big">$ 300</span></span>
+            <span class="else">Сертификация автомобиля:<span class="white-big">$ 1500</span></span>
+            <span class="else-opis">Краткое описание:</span>
+            <span class="else-opis-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+    </div>
+    <div class="button-back">
+        <a href="../index.html"><img src="../images/icons/cancel.svg"></a>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

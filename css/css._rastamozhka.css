@@ -1,0 +1,185 @@
+#rast_tabs{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 25px;
+
+}
+#rasttab1{
+    color: white;
+    display: block;
+    padding: 8px 30px;
+    border: 1px solid #4470b5;
+    border-radius: 22px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.kWt{
+    display: block;
+    width: 100%;
+    float: left;
+    margin-right: 5%;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    line-height: 1em;
+    color: white;
+    background-color: #333848;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+}
+.sel{
+    background-color: #4470b5;
+}
+#rasttab2{
+    color: white;
+    display: block;
+    padding: 8px 30px;
+    background-color: none;
+    border: 1px solid #4470b5;
+    border-radius: 22px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+#rasttab1 a{
+    text-decoration: none;
+}
+#rasttab1 a:active{
+    text-decoration: none;
+}
+#rasttab1 a:hover{
+    text-decoration: none;
+}
+select#valuta.mui-select{
+    display: block;
+    text-align: left;
+    width: 20%;
+}
+#rast_calc label{
+    color: #696d7d;
+    padding: 6px 0;
+}
+#valuta{
+
+}
+#price{
+    display: block;
+}
+.container-roztamoj{
+    width: 100%;
+
+}
+.input-prise{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.mui-input{
+    width: 80%;
+    float: left;
+    margin-right: 5%;
+}
+#motor{
+    width: 100%;
+}
+#fuel{
+    width: 100%;
+}
+#age{
+    width: 100%;
+}
+.mui-but{
+    text-align: center;
+    margin: 0 auto;
+}
+#rastb span{
+    display: inline-block;
+    width: 220px;
+    height: 40px;
+    background-color: #c9423d;
+    margin: 10px auto;
+    font-size: 18px;
+    color: white;
+    padding: 8px 0;
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-result {
+    max-width: 350px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(20, 20, 20, 0.9);
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    z-index: 99999;
+    padding: 20px;
+    margin-left: -175px;
+    margin-top: -226px;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.modal-result table{
+    min-width: 250px;
+}
+.modal-result input{
+    display: inline;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    width: 80px;
+}
+#span-right{
+    text-align: right;
+    display: inline-block;
+}
+.calc-result-tab td{
+    padding: 5px;
+    border: 1px solid white;
+}
+#calc-button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #c9423d;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 8px;
+}
+.valuta-block{
+    margin: 0 auto;
+    text-align: center;
+}

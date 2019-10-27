@@ -1,0 +1,99 @@
+.all-cars-vikup{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(44, 49, 53, 0.95);
+}
+.vikup-rubrik{
+    width: 100%;
+    margin: 40px auto 0px auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: block;
+    float: none;
+    text-align: center;
+}
+.vikup-rubrik-polosa{
+    width: 100%;
+    text-align: center;
+}
+.vikup-rubrik-polosa hr{
+    width: 100px;
+    background-color: red;
+    border: 2px solid red;
+    margin: 10 auto 40px auto;
+}
+.one-car{
+    width: 220px;
+    margin: 40px 2% 40px 2%;
+}
+.one-car img{
+    width: 100%;
+    height: auto;
+}
+.one-car .marks-avto{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.one-car .one-car-vikup-model{
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+.one-car-opisanie{
+    display: block;
+    color: white;
+    margin: 5px 0;
+    font-size: 12px;
+}
+.vikup-price{
+    color: #c9423d;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: sans-serif-semibold, sans-serif;
+}
+.one-car-opisanie-float{
+    float: left;
+}
+.vikup-price{
+    text-align: right;
+}
+.one-car a{
+    text-align: center;
+    align-content: center;
+    display: block;
+    width: 146px;
+    margin: 0 auto;
+}
+.one-car a:hover{
+    text-decoration: none;
+}
+.vikup-batton-opisanie{
+    text-align: center;
+    margin: 30px 0px;
+    padding: 12px 33px;
+    background-color: #c9423d;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    display: block;
+}
+.button-back{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 99999999;
+    top: 10px;
+    right: 10px;
+}

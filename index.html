@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USAImport</title>
+    <link rel="shortcut icon" href="images/icons/car.png" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="fonts/css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/radio-action.css" rel="stylesheet">
+    <link href="css/css._rastamozhka.css" rel="stylesheet">
+    <link href="css/vikup-avto.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/calc.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="fixed-div">
+<div class="fixed-ever effect-shadow">
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav_top " id="nav_top">
+            <ul>
+                <li><a href="#home">ГЛАВНАЯ</a></li>
+                <li><a href="#vikup">ВЫКУПЛЕННЫЕ АВТО</a></li>
+                <li><a href="#aukcion">АУКЦИОНЫ</a></li>
+                <li><a href="#orders">ОТЗЫВЫ</a></li>
+                <li><a href="#why-we">ПОЧЕМУ МЫ?</a></li>
+                <li><a href="#our-service">УСЛУГИ</a></li>
+                <!--<li><a href="#our-comrade">НАШИ СОТРУДНИКИ</a></li> -->
+                <li><a href="#advantage">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div id="home"></div>
+    <div class="laptop_nav">
+        <input type="checkbox" class="hiden-nav-button" id="check">
+        <label for="check"><i class="fa fa-align-justify fa-2x" aria-hidden="true"></i></label>
+        <div class="hiden-nav effect-shadow" id="hiden-nav">
+            <ul>
+                <li ><a href="#home" onclick="$('#check').click()" >ГЛАВНАЯ</a></li><hr>
+                <li><a href="#vikup"onclick="$('#check').click()">ВЫКУПЛЕННЫЕ АВТО</a></li><hr>
+                <li><a href="#aukcion" onclick="$('#check').click()">АУКЦИОНЫ</a></li><hr>
+                <li><a href="#orders" onclick="$('#check').click()">ОТЗЫВЫ</a></li><hr>
+                <li><a href="#why-we" onclick="$('#check').click()">ПОЧЕМУ МЫ?</a></li><hr>
+                <li><a href="#our-service" onclick="$('#check').click()">УСЛУГИ</a></li><hr>
+                <!--<li><a href="#our-comrade" onclick="$('#check').click()">НАШИ СОТРУДНИКИ</a></li><hr> -->
+                <li><a href="#advantage" onclick="$('#check').click()">ПРЕИМУЩЕСТВА</a></li><hr>
+                <li><a href="#contacts" onclick="$('#check').click()">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+    </header>
+    <section class="section-header">
+        <div class="header-slider">
+            <div class="slider">
+                <div class="slider-text">
+                <span class="white-text">ПОКУПКА АВТОМОБИЛЕЙ<br>
+НА АУКЦИОНАХ </span><span class="red-text">США</span>
+                </div>
+<!-- Сладйдер для сайта -->
+                <section class="awSlider">
+                    <div  class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                            <li data-target=".carousel" data-slide-to="1"></li>
+                            <li data-target=".carousel" data-slide-to="2"></li>
+                            <li data-target=".carousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/slider1.jpg">
+                                <div class="carousel-caption">   </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/slider2.jpg">
+                                <div class="carousel-caption">   </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/slider3.jpg">
+                                <div class="carousel-caption">   </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/slider4.jpg">
+                                <div class="carousel-caption">   </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script src="js/stopExecutionOnTimeout.js"></script><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script>
+                <script>$('section.awSlider .carousel').carousel({
+                    pause: "hover",
+                    interval: 8000
+                });
+
+                var startImage = $('section.awSlider .item.active > img').attr('src');
+                $('section.awSlider').append('<img src="' + startImage + '">');
+
+                $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+                    var bscn = $(this).find('.item.active > img').attr('src');
+                    $('section.awSlider > img').attr('src',bscn);
+                });
+                </script>
+            </div>
+<!-- Сладйдер для сайта -->
+            <div class="calc">
+                <p>КАЛЬКУЛЯТОР РАСТАМОЖКИ</p>
+                <div id="rast_tabs">
+                    <a id="rasttab1" class="sel" title="Легковые автомобили">
+                        <span></span><strong>Легковые</strong>
+                    </a>
+                    <a id="rasttab2" title="Электромобили">
+                        <span></span><strong>Электро</strong>
+                    </a>
+                </div>
+                <form id="rast_calc" action="" method="post">
+                    <div class="container-roztamoj">
+                        <label for="price">Стоимость авто за границей</label>
+                        <div class="input-prise">
+
+                            <input  class="mui-input" type="number" name="price" id="price" value="20000">
+                            <select class="mui-select" name="valuta" id="valuta">
+                                <option value="$">$</option>
+                                <option value="€">€</option>
+                            </select>
+                        </div>
+                        <div id="powerdiv" style="display:none">
+                            <label for="motor">Мощность</label>
+                            <span>
+                                <input class="kWt" type="number" min="1" max="9999" step="1" maxlength="4" name="power" id="power" value="80"/>
+                            </span>
+                        </div>
+                        <div id="motordiv1">
+                            <label for="motor">Объем двигателя, куб.дм</label>
+                            <select  class="mui-select" name="motor" id="motor">
+                                <option></option>
+                                <option value="500">0.5</option><option value="600">0.6</option>
+                                <option value="700">0.7</option><option value="800">0.8</option>
+                                <option value="900">0.9</option><option value="1000">1.0</option>
+                                <option value="1100">1.1</option><option value="1200">1.2</option>
+                                <option value="1300">1.3</option><option value="1400">1.4</option>
+                                <option value="1500">1.5</option><option value="1600" selected="selected">1.6</option>
+                                <option value="1700">1.7</option><option value="1800">1.8</option>
+                                <option value="1900">1.9</option><option value="2000">2.0</option>
+                                <option value="2100">2.1</option><option value="2200">2.2</option>
+                                <option value="2300">2.3</option><option value="2400">2.4</option>
+                                <option value="2500">2.5</option><option value="2600">2.6</option>
+                                <option value="2700">2.7</option><option value="2800">2.8</option>
+                                <option value="2900">2.9</option><option value="3000">3.0</option>
+                                <option value="3100">3.1</option><option value="3200">3.2</option>
+                                <option value="3300">3.3</option><option value="3400">3.4</option>
+                                <option value="3500">3.5</option><option value="3600">3.6</option>
+                                <option value="3700">3.7</option><option value="3800">3.8</option>
+                                <option value="3900">3.9</option><option value="4000">4.0</option>
+                                <option value="4100">4.1</option><option value="4200">4.2</option>
+                                <option value="4300">4.3</option><option value="4400">4.4</option>
+                                <option value="4500">4.5</option><option value="4600">4.6</option>
+                                <option value="4700">4.7</option><option value="4800">4.8</option>
+                                <option value="4900">4.9</option><option value="5000">5.0</option>
+                                <option value="5100">5.1</option><option value="5200">5.2</option>
+                                <option value="5300">5.3</option><option value="5400">5.4</option>
+                                <option value="5500">5.5</option><option value="5600">5.6</option>
+                                <option value="5700">5.7</option><option value="5800">5.8</option>
+                                <option value="5900">5.9</option><option value="6000">6.0</option>
+                                <option value="6100">6.1</option><option value="6200">6.2</option>
+                                <option value="6300">6.3</option><option value="6400">6.4</option>
+                                <option value="6500">6.5</option><option value="6600">6.6</option>
+                                <option value="6700">6.7</option><option value="6800">6.8</option>
+                                <option value="6900">6.9</option><option value="7000">7.0</option>
+                                <option value="7100">7.1</option><option value="7200">7.2</option>
+                                <option value="7300">7.3</option><option value="7400">7.4</option>
+                                <option value="7500">7.5</option><option value="7600">7.6</option>
+                                <option value="7700">7.7</option><option value="7800">7.8</option>
+                                <option value="7900">7.9</option><option value="8000">8.0</option><option value="8100">8.1</option><option value="8200">8.2</option><option value="8300">8.3</option><option value="8400">8.4</option><option value="8500">8.5</option><option value="8600">8.6</option><option value="8700">8.7</option><option value="8800">8.8</option><option value="8900">8.9</option><option value="9000">9.0</option><option value="9100">9.1</option><option value="9200">9.2</option><option value="9300">9.3</option><option value="9400">9.4</option><option value="9500">9.5</option><option value="9600">9.6</option><option value="9700">9.7</option><option value="9800">9.8</option><option value="9900">9.9</option><option value="10000">10.0</option><option value="10100">10.1</option><option value="10200">10.2</option><option value="10300">10.3</option><option value="10400">10.4</option><option value="10500">10.5</option><option value="10600">10.6</option><option value="10700">10.7</option><option value="10800">10.8</option><option value="10900">10.9</option><option value="11000">11.0</option><option value="11100">11.1</option><option value="11200">11.2</option><option value="11300">11.3</option><option value="11400">11.4</option><option value="11500">11.5</option><option value="11600">11.6</option><option value="11700">11.7</option><option value="11800">11.8</option><option value="11900">11.9</option><option value="12000">12.0</option><option value="12100">12.1</option><option value="12200">12.2</option><option value="12300">12.3</option><option value="12400">12.4</option><option value="12500">12.5</option><option value="12600">12.6</option><option value="12700">12.7</option><option value="12800">12.8</option><option value="12900">12.9</option><option value="13000">13.0</option><option value="13100">13.1</option><option value="13200">13.2</option><option value="13300">13.3</option><option value="13400">13.4</option><option value="13500">13.5</option><option value="13600">13.6</option><option value="13700">13.7</option><option value="13800">13.8</option><option value="13900">13.9</option><option value="14000">14.0</option><option value="14100">14.1</option><option value="14200">14.2</option><option value="14300">14.3</option><option value="14400">14.4</option><option value="14500">14.5</option><option value="14600">14.6</option><option value="14700">14.7</option><option value="14800">14.8</option><option value="14900">14.9</option><option value="15000">15.0</option><option value="15100">15.1</option><option value="15200">15.2</option><option value="15300">15.3</option><option value="15400">15.4</option><option value="15500">15.5</option><option value="15600">15.6</option><option value="15700">15.7</option><option value="15800">15.8</option><option value="15900">15.9</option><option value="16000">16.0</option><option value="16100">16.1</option><option value="16200">16.2</option><option value="16300">16.3</option><option value="16400">16.4</option><option value="16500">16.5</option><option value="16600">16.6</option><option value="16700">16.7</option><option value="16800">16.8</option><option value="16900">16.9</option><option value="17000">17.0</option><option value="17100">17.1</option><option value="17200">17.2</option><option value="17300">17.3</option><option value="17400">17.4</option><option value="17500">17.5</option><option value="17600">17.6</option><option value="17700">17.7</option><option value="17800">17.8</option><option value="17900">17.9</option><option value="18000">18.0</option><option value="18100">18.1</option><option value="18200">18.2</option><option value="18300">18.3</option><option value="18400">18.4</option><option value="18500">18.5</option><option value="18600">18.6</option><option value="18700">18.7</option><option value="18800">18.8</option><option value="18900">18.9</option><option value="19000">19.0</option><option value="19100">19.1</option><option value="19200">19.2</option><option value="19300">19.3</option><option value="19400">19.4</option><option value="19500">19.5</option><option value="19600">19.6</option><option value="19700">19.7</option><option value="19800">19.8</option><option value="19900">19.9</option><option value="20000">20.0</option></select>
+                            <label for="fuel">Тип двигателя</label>
+                            <select  class="mui-select" name="fuel" id="fuel">
+                                <option value="1">бензин</option>
+                                <option value="2">дизель</option>
+                            </select>
+                            <div id="motordiv2" style="display:none">
+                                <label for="motor2">Двигатель</label>
+                                <span>
+                                <input class="mui-input cm" type="number" min="10" max="20000" step="1" maxlength="4" name="motor2" id="motor2" value="150">
+                            </span>
+                            </div>
+                            <div id="agediv">
+                                <label for="age">Возраст автомобиля с момента выпуска</label>
+                                <select class="mui-select" name="age" id="age">
+                                    <option value="0">новое</option>
+                                    <option value="1">до 5 лет</option>
+                                    <option value="2">5 и более</option>
+                                   <!-- <option value="3">более 8 лет</option>-->
+                                </select>
+                                <br clear="left">
+                            </div>
+                        </div>
+                            <div class="mui-but" id="rastb" >
+                                <span>Расчитать</span>
+                            </div>
+                    </div>
+                </form>
+        </div>
+    </section>
+        <div class="modal-result">
+            <table class="calc-result-tab">
+                <tr>
+                    <td>Стоимость авто</td>
+                    <td><input type="text" name="resulttc" value=""></td>
+                </tr>
+                <tr>
+                    <td>Ввозная ( импортная ) пошлина</td>
+                    <td><input type="text" name="resultimp" value=""></td>
+                </tr>
+                <tr>
+                    <td>Акцизный сбор</td>
+                    <td><input type="text" name="resultac" value=""></td>
+                </tr>
+                <tr>
+                    <td>Налог на добавленную стоимость(НДС)</td>
+                    <td><input type="text" name="nds" value=""></td>
+                </tr>
+                <tr>
+                    <td>Итого:</td>
+                    <td><input type="text" name="result" value=""></td>
+                </tr>
+            </table>
+            <br>
+            <div class="valuta-block" id="valuta-block">
+                <!-- Minfin.com.ua currency informer 275x120 yellow-->
+                <div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют</a> от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="275" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
+                <!-- Minfin.com.ua currency informer 275x120 yellow-->
+            </div>
+            <div id="calc-button">OK</div>
+        </div>
+    <section class="section-byed">
+        <div class="">
+            <div id="vikup"></div></div>
+    <section id="" class="sale-auto vikup">
+        <p>выкупленые авто</p>
+        <p><hr></p>
+        <div class="carusel">
+            <ul class="bxslider">
+                <li>
+                    <div class="hover-1">
+                        <img src="images/cars/car_1.jpg" />
+                    <div class="bxslider-1">
+                        <span class="brande">Honda</span>
+                        <span class="model">ACCORD 4C LX 2014</span>
+                        <a href="cars/car_1.html">ПОДРОБНЕЕ</a>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-2">
+                        <img src="images/cars/car_2.jpg" />
+                        <div class="bxslider-2">
+                            <span class="brande">Honda</span>
+                            <span class="model">ACCORD 4C LX 2014</span>
+                            <a href="">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                <li>
+                    <div class="hover-3">
+                        <img src="images/cars/car_3.jpg" />
+                        <div class="bxslider-3">
+                            <span class="brande">Honda</span>
+                            <span class="model">ACCORD 4C LX 2014</span>
+                            <a href="">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-4">
+                        <img src="images/cars/car_4.jpg" />
+                        <div class="bxslider-4">
+                            <span class="brande">Honda</span>
+                            <span class="model">ACCORD 4C LX 2014</span>
+                            <a href="">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-5">
+                        <img src="images/cars/car_5.jpg" />
+                        <div class="bxslider-5">
+                            <span class="brande">Honda</span>
+                            <span class="model">ACCORD 4C LX 2014</span>
+                            <a href="">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="all-cars">
+                <span><a href="all-cars.html">все автомобили</a></span>
+            </div>
+            <!-- jQuery library
+            <script src="js/jquery-3.2.1.min.js"></script>-->
+            <!-- bxSlider Javascript file -->
+            <script src="js/jquery.bxslider.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('.bxslider').bxSlider({
+                        mode: 'horizontal',
+                        moveSlides: 1,
+                        slideMargin: 20,
+                        infiniteLoop: true,
+                        slideWidth: 250,
+                        minSlides: 2,
+                        maxSlides: 5,
+                        speed: 800,
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    </section>
+<div id="aukcion"></div>
+    <section id="" class="section-logo-partners aukcion">
+        <p>наши аукционы</p>
+        <p><hr></p>
+        <div class="logo-partner">
+            <img src="images/section_logo_1.jpg">
+        </div>
+        <div class="logo-partner">
+            <img src="images/section_logo_2.jpg">
+        </div>
+        <div class="logo-partner">
+            <img src="images/section_logo_3.jpg">
+        </div>
+    </section>
+<div id="orders"></div>
+    <section class="our-client-order" id="">
+        <p>отзывы наших клиентов</p>
+        <p><hr></p>
+        <div class="client-order">
+            <img class="photo" src="images/orders/order_1.jpg">
+            <img class="people-photo" src="images/orders/order_1_people_1.jpg">
+            <span class="content-name">Анна Моловьева</span>
+            <img class="devider-pic" src="images/orders/devider.svg">
+            <span class="content-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Очень понравилося подход к делу.
+                Подробно все объяснили, показали, помогли с выбором.
+                В итоге остановилась на электрическом Nissan Leaf.
+                Машинкой очень довольна. Спасибо!</span>
+        </div>
+        <div class="client-order">
+            <img class="photo" src="images/orders/order_2.jpg">
+            <img class="people-photo" src="images/orders/order_1_people_2.jpg">
+            <span class="content-name">Антон Конев</span>
+            <img class="devider-pic" src="images/orders/devider.svg">
+            <span class="content-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Очень понравилося подход к делу.
+                Подробно все объяснили, показали, помогли с выбором.
+                В итоге остановилась на электрическом Nissan Leaf.
+                Машинкой очень довольна. Спасибо!</span>
+        </div>
+        <div class="client-order widht-hiden">
+            <img class="photo" src="images/orders/order_3.jpg">
+            <img class="people-photo" src="images/orders/order_1_people_3.jpg">
+            <span class="content-name">Олег Князев</span>
+            <img class="devider-pic" src="images/orders/devider.svg">
+            <span class="content-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Очень понравилося подход к делу.
+                Подробно все объяснили, показали, помогли с выбором.
+                В итоге остановилась на электрическом Nissan Leaf.
+                Машинкой очень довольна. Спасибо!</span>
+        </div>
+    </section>
+<div id="why-we"></div>
+    <section class="why-we" id="">
+        <p>ПОЧЕМУ МЫ?</p>
+        <hr>
+        <div class="why-we-section">
+            <div class="why-we-video video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HA1hubEj3wQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="why-we-content">
+                <ul>
+                    <li><span>Опыт работы в автомобильном бизнесе более 5 лет. Мы занимаемся исключительно легковыми автомобилями, на нашем счету более 300 доставленных, оформленных, растаможенных автомобилей;</span></li>
+                    <li><span>у нас работает собственный авто-прокат в Херсоне и Николаеве. Наш парк авто на сегодняшний день насчитывает 40 личных автомобилей – мы знаем все о выборе и эксплуатации машин;</span></li>
+                    <li><span>мы самостоятельно занимаемся ремонтом автомобилей и знаем, какие типичные проблемы встречаются у американцев. Исходя из этого опыта, мы можем советовать вам и помогать сделать правильный выбор;</span></li>
+                    <li><span>история автомобиля и ее соответствие написанному в объявлении тщательно проверяется через специализированные источники информации, в том числе через CARFAX и AUTOCHECK; </span></li>
+                    <li><span>мы работаем без посредников, что позволяет предложить вам самые выгодные цены на доставку и растаможку; </span></li>
+                    <li><span>мы закажем запчасти для вашего автомобиля из Европы, пока машина едет в Украину. После доставки опытные автомеханики полностью диагностируют машину и восстанавливают ее под ключ; </span></li>
+                    <li><span>мы делаем детальный фотоотчет по автомобилю перед его погрузкой в контейнер, чтобы вы смогли оценить его реальное состояние;</li>
+                    <li><span>контейнер, в котором находится ваш автомобиль, можно отслеживать по трекинг-номеру Cargo Loop – вы всегда будете знать, где именно находится машина;</span></li>
+                    <li><span>вы можете следить за процессом покупки при проведении онлайн-аукциона – мы полностью открыты и прозрачны для клиентов;</span></li>
+                    <li><span>вы оплачиваете автомобиль и доставку самостоятельно, пересылая деньги в США, вы являетесь единственным хозяином груза – мы не оформляем его на себя во избежание недоразумений. </span></li>
+                    <li><span>Все оплаты проводятся напрямую в США, через банк.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<div id="our-service"></div>
+    <section class="our-service" id="">
+        <p>НАШИ УСЛУГИ</p>
+        <hr>
+        <form>
+        <div class="all-service">
+            <div class="all-service-up">
+            <div class="service">
+                <img src="images/icons/avto-search.svg">
+                <input type="radio" name="service" value="avto-search" class="choose-service" checked>
+                <span>ПОИСК АВТОМОБИЛЯ</span>
+                <div class="service-footer footer-1"">
+                    <div class="service-left serv-left-border default-red" id="border-avto-search"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/icons/avto-byed.svg">
+                <input type="radio" name="service" value="avto-byed" class="choose-service">
+                <span>ПОКУПКА АВТО</span>
+                <div class="service-footer footer-2">
+                    <div class="service-left serv-left-border" id="border-avto-byed"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/icons/transver-odessa.svg">
+                <input type="radio" name="service" value="transver-odessa" class="choose-service">
+                <span>ДОСТАВКА В ОДЕССУ</span>
+                <div class="service-footer footer-3">
+                    <div class="service-left serv-left-border" id="border-transver-odessa"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/icons/document.svg">
+                <input type="radio" name="service" value="document" class="choose-service">
+                <span>ДОКУМЕНТАЛЬНОЕ СОПРОВОЖДЕНИЕ</span>
+                <div class="service-footer footer-4">
+                    <div class="service-left serv-left-border" id="border-document"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/icons/roztamoj.svg">
+                <input type="radio" name="service" value="roztamoj" class="choose-service">
+                <span>РАСТАМОЖКА</span>
+                <div class="service-footer footer-5">
+                    <div class="service-left serv-left-border" id="border-roztamoj"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/icons/ukraine_transver.svg">
+                <input type="radio" name="service" value="ukraine_transver" class="choose-service">
+                <span>ДОСТАВКА<br>ПО УКРАИНЕ</span>
+                <div class="service-footer footer-6">
+                    <div class="service-left serv-left-border" id="border-ukraine_transver"></div>
+                    <div class="service-right"></div>
+                </div>
+            </div>
+            </div>
+            <div class="service-content">
+                <span class="avto-search service-cont" id="avto-search">
+                    Вы называете нам модель, марку и год выпуска автомобиля, сообщаете иные нюансы
+                    (цвет, состояние, пробег), а мы осуществляем поиск подходящего
+                    варианта. Вполне возможно, что нужная машина не будет найдена
+                    или ее экспорт из США невозможен. Тогда наши менеджеры предложат
+                    вам альтернативу или порекомендуют другой автомобиль, основываясь
+                    на богатом опыте.  Мы рассматриваем только те транспортные
+                    средства, которые являются экспортными и имеют набор документов,
+                    позволяющий легально ввезти их в Украину. При необходимости мы
+                    обучим вас правильно искать машины или самостоятельно подберем
+                    хороший, надежный автомобиль.</span>
+                <span class="avto-byed service-cont" id="avto-byed">
+                    После того, как автомобиль найден, мы определяем крайнюю цену, которая интересна
+                    заказчику. Затем мы участвуем в живом аукционе и пытаемся купить
+                    машину по максимально выгодной цене, не выходя за рамки
+                    оговоренного. Некоторые машины покупаются за фиксированную
+                    сумму, что облегчает и ускоряет процесс. Если аукцион выигран,
+                    то вам надо его оплатить. Мы создаем invoice на ваше имя, а вы
+                    напрямую оплачиваете автомобиль и его доставку в Украину.
+                    Мы расскажем вам, как выгоднее всего совершить оплату, чтобы
+                    не потерять деньги на комиссии при международном переводе.</span>
+                <span class="avto-byed service-cont" id="transver-odessa">
+                    Итак, мы нашли авто, а его выкупили. Далее наш менеджер продумывает
+                    логистику с учетом имеющихся нюансов. Просчитывается доставка
+                    машины в ближайший порт США, погрузка его в контейнер (чтобы
+                    сократить расходы, в контейнер грузят сразу 4 автомобиля),
+                    доставка в Одесский морской порт. За передвижением транспортного
+                    средства можно наблюдать в онлайн-режиме. Мы пользуемся услугами
+                    проверенных перевозчиков, поэтому ваш автомобиль будет в
+                    надежных руках.</span>
+                <span class="avto-byed service-cont" id="document">
+                    Все документальное сопровождение сделки мы берем
+                    на себя. На территории США оформляется необходимые для
+                    экспорта документы и таможенные декларации, в Украине
+                    проводится таможенное оформление доставленного груза.
+                    Основной пакет документов подготавливается, пока
+                    автомобиль находится в дороге. После выгрузки машины
+                    в одесском порту и ее осмотра контролирующими органами,
+                    документы передаются в таможенную службу.</span>
+                <span class="avto-byed service-cont" id="roztamoj">
+                    Мы гарантируем нашим клиентам помощь в таможенной очистке
+                    автомобиля, в оформлении сопроводительной документации и в
+                    предоставление брокерских услуг. Мы оказываем услугу под ключ:
+                    контролируем процесс погружения машины в контейнер, доставку в
+                    порт Одессы, расформирование контейнера и выгрузку вашего авто,
+                    оценку машины и проведение процедуры растаможки (таможенной
+                    очистки). После прибытия машины в порт Одессы с вами свяжется
+                    наш брокер и сообщит вам о дальнейших действиях. Он заранее
+                    подготовит все необходимые документы для беспроблемного прохождения
+                    процедуры растамаживания.</span>
+                <span class="avto-byed service-cont" id="ukraine_transver">
+                    Мы без проблем поможем вам доставить автомобиль в любую точку
+                    Украины за доступную сумму. Мы гарантируем полную сохранность
+                    машины и скорость доставки местными транспортными компаниями.</span>
+                <span class="avto-byed service-cont" id="avto-parts">
+                    Мы предлагаем:
+                    <ol>
+                        <li>Запчасти с Европы под ваш автомобиль по выгодным ценам.</li>
+                        <li>Подбор деталей в цвет.</li>
+                        <li>Полная расшифровка vin.</li>
+                        <li>Предварительный заказ запчастей (пока автомобиль находится в пути).</li>
+                    </ol>
+                    В нашей компании работает опытный снабженец, занимающийся поиском деталей, что существенно сократит ваше время и деньги.
+                    </span>
+                <span class="avto-byed service-cont" id="avto-repeer">
+                    Хотите получить полностью исправный и готовый к эксплуатации автомобиль –
+                    доверьте нам его ремонт. Опытные автомеханики проведут
+                    диагностику машины и устранят имеющиеся недостатки, используя
+                    только оригинальные детали. Мы практикуем индивидуальный подход
+                    к каждому авто – обращайтесь.</span>
+                <span class="avto-byed service-cont" id="not-good">
+                    Если по каким-то причинам после оплаты вы передумаете покупать
+                    автомобиль, то мы выкупим его себе. Вы не потеряете существенную
+                    сумму и останетесь довольны сотрудничеством. Каждый случай
+                    индивидуален - звоните! </span>
+                <span class="avto-byed service-cont" id="avto_seil">
+                    Мы предлагаем выгодные варианты сотрудничества:
+                    мы скидываем вам интересные лоты, вы выбираете понравившиеся
+                    варианты и приобретаете автомобиль в США с целью его
+                    перепродажи в Украине. Мы помогаем вам оформить все
+                    необходимые документы и доставить машину в Украину –
+                    вам нужно будет лишь оплатить наши услуги. Затем вы реализуете
+                    купленный автомобиль в стране и получаете хорошую прибыль.</span>
+            </div>
+        </div>
+            <div class="all-service">
+                <div class="all-service-down">
+                    <div class="service-down">
+                        <div class="service-footer-down footer-1"">
+                        <div class="service-left serv-left-border" id="border-avto-parts"></div>
+                        <div class="service-right"></div>
+                    </div>
+                        <input type="radio" name="service" value="avto-parts" class="choose-service">
+                        <span>ПОКУПКА ЗАПЧАСТЕЙ ПО НИЗКИМ ЦЕНАМ ДЛЯ ВАС</span>
+                </div>
+                <div class="service-down">
+                    <div class="service-footer-down footer-2">
+                        <div class="service-left serv-left-border" id="border-avto-repeer"></div>
+                        <div class="service-right"></div>
+                    </div>
+                    <input type="radio" name="service" value="avto-repeer" class="choose-service">
+                    <span>РЕМОНТ ПОД КЛЮЧ</span>
+                </div>
+                <div class="service-down">
+                    <div class="service-footer-down footer-3">
+                        <div class="service-left serv-left-border" id="border-not-good"></div>
+                        <div class="service-right"></div>
+                    </div>
+                    <input type="radio" name="service" value="not-good" class="choose-service">
+                    <span>ВЫ ПЕРЕДУМАЛИ? ВАМ НЕ ПОНРАВИЛОСЬ? <br>– ВЫКУПИМ ВАШЕ АВТО</span>
+                </div>
+                <div class="service-down">
+                    <div class="service-footer-down footer-4">
+                        <div class="service-left serv-left-border" id="border-avto_seil"></div>
+                        <div class="service-right"></div>
+                    </div>
+                    <input type="radio" name="service" value="avto_seil" class="choose-service">
+                    <span>ХОТИТЕ ЗАРАБАТЫВАТЬ ВМЕСТЕ С НАМИ?</span>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="our-service-hiden">
+        <p>НАШИ УСЛУГИ</p>
+        <hr>
+        <div class="service-all odd-bg">
+            <div class="service-icon">
+                <img src="images/icons/avto-search.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Поиск автомобиля</span>
+                <span class="span-content">Вы называете нам модель, марку и год выпуска автомобиля, сообщаете иные нюансы (цвет, состояние, пробег), а мы осуществляем поиск подходящего варианта. Вполне возможно, что нужная машина не будет найдена или ее экспорт из США невозможен. Тогда наши менеджеры предложат вам альтернативу или порекомендуют другой автомобиль, основываясь на богатом опыте.  Мы рассматриваем только те транспортные средства, которые являются экспортными и имеют набор документов, позволяющий легально ввезти их в Украину. При необходимости мы обучим вас правильно искать машины или самостоятельно подберем хороший, надежный автомобиль.</span>
+            </div>
+        </div>
+        <div class="service-all even-bg">
+            <div class="service-icon">
+                <img src="images/icons/avto-byed.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Покупка авто</span>
+                <span class="span-content">После того, как автомобиль найден, мы определяем крайнюю цену, которая интересна заказчику. Затем мы участвуем в живом аукционе и пытаемся купить машину по максимально выгодной цене, не выходя за рамки оговоренного. Некоторые машины покупаются за фиксированную сумму, что облегчает и ускоряет процесс. Если аукцион выигран, то вам надо его оплатить. Мы создаем invoice на ваше имя, а вы напрямую оплачиваете автомобиль и его доставку в Украину. Мы расскажем вам, как выгоднее всего совершить оплату, чтобы не потерять деньги на комиссии при международном переводе.</span>
+            </div>
+        </div>
+        <div class="service-all odd-bg">
+            <div class="service-icon">
+                <img src="images/icons/transver-odessa.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Доставка в Одесу</span>
+                <span class="span-content">Итак, мы нашли авто, а его выкупили. Далее наш менеджер продумывает логистику с учетом имеющихся нюансов. Просчитывается доставка машины в ближайший порт США, погрузка его в контейнер (чтобы сократить расходы, в контейнер грузят сразу 4 автомобиля), доставка в Одесский морской порт. За передвижением транспортного средства можно наблюдать в онлайн-режиме. Мы пользуемся услугами проверенных перевозчиков, поэтому ваш автомобиль будет в надежных руках.</span>
+            </div>
+        </div>
+        <div class="service-all even-bg">
+            <div class="service-icon">
+                <img src="images/icons/document.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Документальное сопровождение</span>
+                <span class="span-content">Все документальное сопровождение сделки мы берем на себя. На территории США оформляется необходимые для экспорта документы и таможенные декларации, в Украине проводится таможенное оформление доставленного груза. Основной пакет документов подготавливается, пока автомобиль находится в дороге. После выгрузки машины в одесском порту и ее осмотра контролирующими органами, документы передаются в таможенную службу.</span>
+            </div>
+        </div>
+        <div class="service-all odd-bg">
+            <div class="service-icon">
+                <img src="images/icons/roztamoj.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Растаможка</span>
+                <span class="span-content">Мы гарантируем нашим клиентам помощь в таможенной очистке автомобиля, в оформлении сопроводительной документации и в предоставление брокерских услуг. Мы оказываем услугу под ключ: контролируем процесс погружения машины в контейнер, доставку в порт Одессы, расформирование контейнера и выгрузку вашего авто, оценку машины и проведение процедуры растаможки (таможенной очистки). После прибытия машины в порт Одессы с вами свяжется наш брокер и сообщит вам о дальнейших действиях. Он заранее подготовит все необходимые документы для беспроблемного прохождения процедуры растамаживания.</span>
+            </div>
+        </div>
+        <div class="service-all even-bg">
+            <div class="service-icon">
+                <img src="images/icons/ukraine_transver.svg">
+            </div>
+            <div class="service-icon-content">
+                <span class="span-rubric">Доставка по Украине </span>
+                <span class="span-content">Мы без проблем поможем вам доставить автомобиль в любую точку Украины за доступную сумму. Мы гарантируем полную сохранность машины и скорость доставки местными транспортными компаниями.</span>
+            </div>
+        </div>
+        <div class="service-all odd-bg">
+            <div class="service-icon-content">
+                <span class="span-rubric span-rubric-padding">Покупка запчастей по низким ценам для Вас</span>
+                <span class="span-content span-rubric-padding">Мы предлагаем:
+                    <ol>
+                        <li>Запчасти с Европы под ваш автомобиль по выгодным ценам.</li>
+                        <li>Подбор деталей в цвет.</li>
+                        <li>Полная расшифровка vin.</li>
+                        <li>Предварительный заказ запчастей (пока автомобиль находится в пути).</li>
+                    </ol>
+                    В нашей компании работает опытный снабженец, занимающийся поиском деталей, что существенно сократит ваше время и деньги.
+                    </span>
+            </div>
+        </div>
+        <div class="service-all even-bg">
+            <div class="service-icon-content">
+                <span class="span-rubric span-rubric-padding">Ремонт под ключ</span>
+                <span class="span-content span-rubric-padding">Хотите получить полностью исправный и готовый к эксплуатации автомобиль – доверьте нам его ремонт. Опытные автомеханики проведут диагностику машины и устранят имеющиеся недостатки, используя только оригинальные детали. Мы практикуем индивидуальный подход к каждому авто – обращайтесь. </span>
+            </div>
+        </div>
+        <div class="service-all odd-bg">
+            <div class="service-icon-content">
+                <span class="span-rubric span-rubric-padding">Вы передумали? Вам не понравилось? – Выкупим ваше авто</span>
+                <span class="span-content span-rubric-padding">Если по каким-то причинам после оплаты вы передумаете покупать автомобиль, то мы выкупим его себе. Вы не потеряете существенную сумму и останетесь довольны сотрудничеством. Каждый случай индивидуален - звоните!</span>
+            </div>
+        </div>
+        <div class="service-all even-bg">
+            <div class="service-icon-content">
+                <span class="span-rubric span-rubric-padding">Хотите зарабатывать вместе с нами?</span>
+                <span class="span-content span-rubric-padding">Мы предлагаем выгодные варианты сотрудничества: мы скидываем вам интересные лоты, вы выбираете понравившиеся варианты и приобретаете автомобиль в США с целью его перепродажи в Украине. Мы помогаем вам оформить все необходимые документы и доставить машину в Украину – вам нужно будет лишь оплатить наши услуги. Затем вы реализуете купленный автомобиль в стране и получаете хорошую прибыль.</span>
+            </div>
+        </div>
+    </section>
+<div id="contacts"></div>
+<section class="contacts" id="contacts-contain">
+    <p>наши контакты</p>
+    <hr>
+    <div class="all-contacts">
+        <div class="advantage-content">
+            <div class="contacts-adress">
+                <div class="contacts-adress-left">
+                    <img src="images/location.svg">
+                    <span class="breake">г. Херсон</span>
+                    <span class="breake">ул. Пушкинаская 99, оф. 123</span>
+                    <span class="breake fat">+38 097 876 56 45</span>
+                    <span class="breake fat">+38 097 876 56 45</span>
+                    <span class="breake fat">usaimport@gmail.com</span>
+                </div>
+                <div class="contacts-adress-right">
+                    <img src="images/location.svg">
+                    <span class="breake">г. Николаев</span>
+                    <span class="breake">ул. Пушкинаская 99, оф. 123</span>
+                    <span class="breake fat">+38 097 876 56 45</span>
+                    <span class="breake fat">+38 097 876 56 45</span>
+                    <span class="breake fat">usaimport@gmail.com</span>
+                </div>
+                <div class="contacts-social">
+                        <span>Наша компания usaimport являемся официальными
+                            представителями в Украине -
+                            <a href="http://www.usaintercargo.com"
+                            >http://www.usaintercargo.com/</a>
+                        </span>
+                    <span>Мы также – это самый крупный автопрокат в Херсоне и
+                            Николаеве - <a href=" https://catcar.com.ua">https://catcar.com.ua/</a></span>
+                    <div class="social-icon">
+                        <a href=""><img src="images/icons/vk.svg"></a>
+                        <a href=""><img src="images/icons/fb.svg"></a>
+                        <a href=""><img src="images/icons/inst.svg"></a>
+                        <a href=""><img src="images/icons/youtube.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div id="our-comrade"></div>
+    <section class="our-comrade" id="">
+        <p>НАШИ СОТРУДНИКИ</p>
+        <hr>
+        <div id="comrade">
+            <div class="comrade">
+                <img src="images/comrade/comrade_1.jpg">
+                <span class="comrade-name">
+                    Александр Фуркевич
+                </span>
+                <div class="border-name"></div>
+                <span class="comrade-work">
+                    Менеджер
+                </span>
+                <span class="comrade-phone">
+                   +38 063 456 76 56
+                </span>
+                <span class="comrade-city">
+                   г. Потава
+                </span>
+            </div>
+            <div class="comrade">
+                <div class="comrade">
+                    <img src="images/comrade/comrade_1.jpg">
+                    <span class="comrade-name">
+                    Александр Фуркевич
+                </span>
+                    <div class="border-name"></div>
+                    <span class="comrade-work">
+                    Менеджер
+                </span>
+                    <span class="comrade-phone">
+                   +38 063 456 76 56
+                </span>
+                    <span class="comrade-city">
+                   г. Потава
+                </span>
+                </div>
+        </div>
+    </section> -->
+<section class="section-others">
+        <p>То что не делают другие</p>
+        <hr>
+        <div id="others"></div>
+        <div id="">
+            <div class="others">
+                <ol>
+                    <li><span class="num">1</span>Вам не понравилась купленная машина? Вы передумали в процессе доставки? Вы купили через нас автомобиль, а захотели другой? Мы выкупим ваш автомобиль с минимальными финансовыми потерями для вас!</li>
+                    <li><span class="num">2</span>Мы качественно отремонтируем ваш автомобиль оригинальными запчастями, проведем его диагностику и техобслуживание. </li>
+                    <li><span class="num">3</span>Мы оказываем полное сопровождение сделки от подбора автомобиля до его растаможки и доставки в ваш город на украинских номерах.</li>
+                    <li><span class="num">4</span>Мы решаем любые нестандартные вопросы и нацелены на результат.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+<div id="advantage"></div>
+    <section class="advantage" id="">
+        <div class="advantage-content">
+            <div class="advantage-left">
+                <span class="head-span">Преимущества покупки Авто из Америки</span>
+                <ol>
+                    <li><span class="num-left">1</span>Выгодная цена. При покупке вы экономите примерно 20-50% от стоимости машины в Украине. Некоторые эксклюзивные марки можно найти только в США. </li>
+                    <li><span class="num-left">2</span>Только свежие машины. Средний возраст ввозимых машин – не более 5 лет.</li>
+                    <li><span class="num-left">3</span>Небольшой пробег, гарантия его реальности через сервисные книжки. </li>
+                    <li><span class="num-left">4</span>Хорошие комплектации, которых в Украине вы просто не найдете. </li>
+                    <li><span class="num-left">5</span>Отличное качество сборки и исполнения – американские машины надежнее даже европейских аналогов. </li>
+                </ol>
+            </div>
+            <div class="advantage-right">
+                <span class="head-span">Минус покупки Авто из Америки</span>
+                <ol>
+                    <li><span class="num-right">1</span>Автомобиль приобретается без фактического осмотра и оценки состояния. Мы просто видим фотографии и читаем описание машины. Мы не уверены в том, что оно будет именно таким, каким вы его себе представляете.</li>
+                    <li><span class="num-right">2</span>В процессе погрузки, доставки и нахождения авто на площадке США транспортное средство может получить дополнительные повреждения.</li>
+                    <li><span class="num-right">3</span>Машину придется подождать. Исходя из нашего опыта, с момента покупки авто до момента ее эксплуатации на территории Украины и постановки на учет проходит примерно 90 дней.</li>
+                    <li><span class="num-right">4</span>Стоимость ремонта может быть больше, чем это планировалось изначально. Впрочем, такие случаи встречаются крайне редко. </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <section class="footer">
+        <span class="footer-copyright">© 2017 - Все права защищены</span>
+    </section>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_top").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1000);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#hiden-nav").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1000);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $('.choose-service').on('click', function (e) {
+            $('.service-cont').hide();
+            $('#'+$(this).val()).show();
+
+            $('.serv-left-border').css('border-right','none');
+            $('#border-'+$(this).val()).css('border-right', '2px solid red');
+        })
+    </script>
+</footer>
+<script>
+    $('.choose-service').on('click', function (e) {
+        $('.service-cont').hide();
+        $('#'+$(this).val()).show();
+    })
+</script>
+<script type="text/javascript">
+    $('#rasttab2').on('click',function(){
+        $('#rasttab1').removeClass('sel');
+        $(this).addClass('sel');
+        $('#motordiv1').hide();
+        $('#powerdiv').show();
+    });
+    $('#rasttab1').on('click',function(){
+        $('#rasttab2').removeClass('sel');
+        $(this).addClass('sel');
+        $('#powerdiv').hide();
+        $('#motordiv1').show();
+    });
+</script>
+</body>

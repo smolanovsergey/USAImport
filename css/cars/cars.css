@@ -1,0 +1,305 @@
+body{
+    font-family: sans-serif-semibold, sans-serif;
+}
+html body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(44, 49, 53, 0.95);
+}
+@font-face {
+    font-family: sans-serif-regular; /* Имя шрифта */
+    src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: sans-serif-semibold; /* Имя шрифта */
+    src: url(../fonts/OpenSans-Semibold.ttf); /* Путь к файлу со шрифтом */
+}
+.cart-avto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin-top: 40px;
+}
+.button-back{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 99999999;
+    top: 10px;
+    right: 10px;
+}
+.cart-avto-carusel{
+    max-width: 620px;
+}
+@charset "utf-8";
+/* CSS Document */
+.lof-slidecontent, .lof-slidecontent a {
+    color:#FFF;
+}
+.lof-slidecontent a.readmore{
+    color:#58B1EA;
+    font-size:95%;
+
+}
+.lof-slidecontent{
+    position:relative;
+    overflow:hidden;
+
+}
+.lof-slidecontent .preload{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100000;
+    text-align:center;
+    background:#FFF
+}
+.lof-slidecontent .preload div{
+    height:100%;
+    width:100%;
+    background:transparent url(../../images/icons/arrow-r.png) no-repeat scroll 50% 50%;
+}
+.lof-main-outer{
+    position:relative;
+    z-index:3px;
+    overflow:hidden;
+}
+
+
+/*******************************************************/
+.lof-main-item-desc{
+    z-index:100px;
+    position:absolute;
+    bottom:50px;
+    left:0px;
+    width:350px;
+    background:url(../images/bg_trans.png);
+    height:100px;
+    /* filter:0.7(opacity:60) */
+    padding:10px;
+}
+.lof-main-item-desc p{
+    margin:0 8px;
+    padding:8px 0
+}
+.lof-main-item-desc h3{
+    padding:0;
+    margin:0
+}
+.lof-main-item-desc h2{
+    padding:0;
+    margin:15px 0 0 0px;
+}
+.lof-main-item-desc h3 a{
+    margin:0;
+    background:#C01F25;
+    font-size:75%;
+    padding:2px 3px;
+    font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+    text-transform:uppercase;
+    text-decoration:none
+}
+.lof-main-item-desc h3 a:hover{
+
+    text-decoration:underline;
+}
+.lof-main-item-desc h3 i {
+    font-size:70%;
+}
+
+/* main flash */
+ul.lof-main-wapper{
+    /* margin-right:auto; */
+    overflow:hidden;
+    background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+    padding:0px;
+    margin:0;
+    position:absolute;
+    overflow:hidden;
+
+}
+
+ul.lof-main-wapper li{
+    overflow:hidden;
+    padding:0px;
+    margin:0px;
+    float:left;
+    position:relative;
+}
+.lof-opacity  li{
+    position:absolute;
+    top:0;
+    left:0;
+    float:inherit;
+}
+ul.lof-main-wapper li img{
+    padding:0px;
+    width: 620px;
+    height: auto;
+
+}
+
+/* item navigator */
+.lof-navigator-wapper {
+    position:absolute;
+    bottom:30px;
+    right:21px;
+    background:url(../images/transparent_bg.png) repeat;
+    padding:5px 0px;
+
+}
+.lof-navigator-outer{
+    position:relative;
+    z-index:100;
+    height:180px;
+    width:580px;
+    overflow:hidden;
+    color:#FFF;
+    float:left;
+    margin: 0 auto;
+}
+ul.lof-navigator{
+    top:0;
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+    height: 75px;
+}
+ul.lof-navigator li{
+    cursor:hand;
+    cursor:pointer;
+    list-style:none;
+    padding:8px 0px;
+    margin-left:0px;
+    overflow:hidden;
+    float:left;
+    display:block;
+    width: 100px;
+    height: 82px;
+    text-align:center;
+
+}
+ul.lof-navigator li img{
+    border:white solid 1px;
+    width: 100px;
+    height: 75px;
+}
+ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
+    border:#A8A8A8 solid 3px;
+}
+.lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous{
+    display:block;
+    width:34px;
+    height:34px;
+    color:#FFF;
+    cursor:pointer;
+
+}
+.lof-navigator-wapper .lof-next {
+    position: absolute;
+    z-index: 2000;
+    right: -26px;
+    bottom: 40px;
+    float:left;
+    text-indent:-999px;
+    margin-right:5px;
+    background:url(../../images/icons/nav-right.svg) no-repeat right center;
+}
+.lof-navigator-wapper .lof-previous {
+    position: absolute;
+    z-index: 2000;
+    left: -24px;
+    bottom: 40px;
+    float:left;
+    text-indent:-999px;
+    margin-left:5px;
+    background:url(../../images/icons/nav-left.svg) no-repeat left center;
+}
+.vikup-rubrik{
+    width: 100%;
+    margin: 40px auto 0px auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    display: block;
+    float: none;
+    text-align: center;
+}
+.vikup-rubrik-polosa{
+    width: 100%;
+    text-align: center;
+}
+.vikup-rubrik-polosa hr{
+    display: block;
+    width: 100px;
+    background-color: red;
+    border: 2px solid red;
+    padding: 10 auto 40px auto;
+}
+.brand{
+    color: white;
+    display: block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: sans-serif-semibold, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.model{
+    display: block;
+    color: white;
+    font-size: 26px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.cart-avto-opisanie-avto{
+    padding: 0 26px;
+    max-width: 620px;
+}
+.else{
+    color: #686d7c;
+    font-size: 18px;
+    display: block;
+    float: none;
+    text-align: left;
+}
+.else-opis{
+    color: #686d7c;
+    font-size: 18px;
+    display: block;
+    float: none;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.else-opis-white{
+    color: white;
+    font-size: 18px;
+    display: block;
+    float: none;
+    text-align: left;
+    line-height: 27px;
+}
+.white-big{
+    font-size: 30px;
+    color: white;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 460px) and (max-width: 645px) {
+    body {
+        zoom: 70%;
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 459px) {
+    body {
+        zoom: 60%;
+    }
+}
